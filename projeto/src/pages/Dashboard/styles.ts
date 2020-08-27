@@ -67,7 +67,6 @@ export const Repositories = styled.div`
       margin-top: 16px;
     }
 
-
     &:hover {
       transform: translateX(10px);
     }
@@ -97,6 +96,5 @@ export const Repositories = styled.div`
       margin-left: auto;
       color: #cbcbd6;
     }
-
   }
 `;

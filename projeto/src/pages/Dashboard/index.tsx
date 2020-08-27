@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
+import api from '../../services/api';
 
 import logoImg from '../../asserts/img/logo.svg';
 
 import{ Title, Form, Repositories } from   './styles';
 
 const Dashboard: React.FC = () => {
+  const [repositories, setRepositories] = useState([]);
+
   return (
     <>
       <img src={logoImg} alt="Github Explorer" />
@@ -17,42 +20,6 @@ const Dashboard: React.FC = () => {
       </Form>
 
       <Repositories>
-        <a href="teste">
-          <img
-            src="https://avatars0.githubusercontent.com/u/62623621?s=460&u=73119ca677ec564b7bdbf16acd27492acc010f2b&v=4"
-            alt="Jennifer Soliver"
-          />
-          <div>
-            <strong>jennysol/unform</strong>
-            <p>Easy peasy highly scalable ReactJS & React Native form!</p>
-          </div>
-          <FiChevronRight size={20} />
-        </a>
-
-        <a href="teste">
-          <img
-            src="https://avatars0.githubusercontent.com/u/62623621?s=460&u=73119ca677ec564b7bdbf16acd27492acc010f2b&v=4"
-            alt="Jennifer Soliver"
-          />
-          <div>
-            <strong>jennysol/unform</strong>
-            <p>Easy peasy highly scalable ReactJS & React Native form!</p>
-          </div>
-          <FiChevronRight size={20} />
-        </a>
-
-        <a href="teste">
-          <img
-            src="https://avatars0.githubusercontent.com/u/62623621?s=460&u=73119ca677ec564b7bdbf16acd27492acc010f2b&v=4"
-            alt="Jennifer Soliver"
-          />
-          <div>
-            <strong>jennysol/unform</strong>
-            <p>Easy peasy highly scalable ReactJS & React Native form!</p>
-          </div>
-          <FiChevronRight size={20} />
-        </a>
-
         <a href="teste">
           <img
             src="https://avatars0.githubusercontent.com/u/62623621?s=460&u=73119ca677ec564b7bdbf16acd27492acc010f2b&v=4"
